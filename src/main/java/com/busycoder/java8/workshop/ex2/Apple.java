@@ -1,15 +1,17 @@
 package com.busycoder.java8.workshop.ex2;
+//Strategy DP: Passing code with behavior parameterization
 class AppleLogic{
 	public  static boolean isHeavy(Apple apple){
 		return apple.getWeight()>=250;
 	}
 }
+
 public class Apple {
 	private String color;
 	private int weight;
 
-	//		boolean		this
-	public boolean isHeavyApple(){
+	//boolean		        this
+	public   boolean isHeavyApple(){
 		return this.getWeight()>=250;
 	}
 

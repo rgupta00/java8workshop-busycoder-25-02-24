@@ -1,6 +1,7 @@
 package com.busycoder.java8.workshop.casestudy;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 class Book {
 	private String title;
@@ -10,6 +11,9 @@ class Book {
 	private int year;
 	private String isbn;
 
+	public Stream<Author> getAuthorStream(){
+		return this.getAuthors().stream();
+	}
 
 	public String getTitle() {
 		return title;

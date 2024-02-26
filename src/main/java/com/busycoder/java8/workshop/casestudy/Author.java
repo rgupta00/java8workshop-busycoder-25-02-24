@@ -1,10 +1,21 @@
 package com.busycoder.java8.workshop.casestudy;
 
+import java.util.LinkedList;
+import java.util.List;
+
 class Author {
 	private String name;
 	private String lastname;
 	private String country;
-	//private List<String> countryVisitors;
+	private List<String> countryVisitors=new LinkedList<>();
+
+	public List<String> getCountryVisitors() {
+		return countryVisitors;
+	}
+
+	public void setCountryVisitors(List<String> countryVisitors) {
+		this.countryVisitors = countryVisitors;
+	}
 
 	public String getName() {
 		return name;
